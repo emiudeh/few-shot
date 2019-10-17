@@ -1,0 +1,11 @@
+DATASET = 'omniglot'
+FCE = False
+DISTANCE = 'cosine' # cosine or l2
+N_TRAIN = 1
+N_TEST = 1
+K_TRAIN = 5
+K_TEST = 20
+Q_TRAIN = 15
+Q_TEST = 1
+LSTM_LAYERS = 1
+UNROLLING_STEPS = 2

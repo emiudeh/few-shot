@@ -32,6 +32,11 @@ def evaluate(model: Module, dataloader: DataLoader, prepare_batch: Callable, met
             x, y = prepare_batch(batch)
             y_pred = model(x)
 
+
+            print("**************")
+            print(type(y))
+            print("**************")
+
             seen += x.shape[0]
 
             if loss_fn is not None:

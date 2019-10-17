@@ -105,3 +105,8 @@ venv.bak/
 
 # Pycharm
 .idea/
+
+
+# directories to ignore
+data/
+models/
