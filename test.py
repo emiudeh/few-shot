@@ -53,12 +53,11 @@ model.load_state_dict(loaded_model)
 
 model.to(device)
 model.double()
-# model.eval()
-print("###########################")
-for param in model.parameters():
-    print(param.data)
-print("###########################")
-# time.sleep(55)
+# print("###########################")
+# for param in model.parameters():
+#     print(param.data)
+# print("###########################")
+
 
 evaluation = dataset_class('evaluation')
 dataloader = DataLoader(
@@ -87,12 +86,8 @@ for batch_index, batch in enumerate(dataloader):
     # print(y_pred.shape)
 
     # time.sleep(55)
-# print(y_pred)
+
 print("FINISHED")
 
 
 
-# time.sleep(55)
-
-# metrics = evaluate(model, dataloader, prepare_batch, metrics=['categorical_accuracy'])
-# print(metrics)
